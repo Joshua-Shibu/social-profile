@@ -1,0 +1,95 @@
+body{
+    height: 100vh;
+    margin: 0;
+    background-color: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: #1F1F1F;
+    height: 520px;
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+button{
+    background-color: #5c5b5b;
+    border-radius: 5px;
+    height: 40px;
+}
+.image>img{
+    height: 80px;
+    width: 80px;
+    border-radius: 70px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+.buttons>button{
+    width: 300px;
+    margin: 7px ;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+}
+button:focus{
+    background-color: #9b9b9b; 
+}
+.info>h2{
+    margin-bottom: 0px;
+}
+.info>p{
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
+@media (max-width: 992px) {
+    .container {
+        height: auto; /* Let the container height adapt to its content */
+        max-height: 600px; /* Prevent excessive growth */
+        width: 80%;
+        padding: 20px; /* Ensure proper spacing inside */
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        width: 70%; /* Increase width on smaller screens */
+        padding: 15px;
+    }
+
+    .buttons > button {
+        font-size: 0.9rem; /* Reduce button text size */
+        width: 200px;
+    }
+
+    .image > img {
+        height: 70px; /* Smaller image for small screens */
+        width: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .buttons > button {
+        font-size: 0.8rem; /* Further reduce text size */
+        margin: 5px 0;
+    }
+
+    .image > img {
+        height: 60px;
+        width: 60px;
+    }
+}
+
